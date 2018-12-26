@@ -1,13 +1,17 @@
+* {
+  margin: 0;
+}
+
 .App {
   text-align: center;
 }
 .App-logo {
-  animation: App-logo-spin infinite 5s linear;
-  height: 20vmin;
+  animation: App-logo-spin infinite 10s linear;
+  height: 10vmin;
 }
 .App-header {
-  background-color: #00D8F9;
-  height: 100vh;
+  background-color: #00ADEF;
+  height: 10vh;
   width: 100vw;
   display: flex;
   flex-direction: column;
@@ -15,13 +19,14 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  border-radius: 80px;
 }
 .App-link {
   color: #61dafb;
 }
 @keyframes App-logo-spin {
   from {
-    transform: rotate(180deg);
+    transform: rotate(0deg);
   }
   to {
     transform: rotate(360deg);
@@ -29,7 +34,7 @@
 }
 .MainContent {
   background-color: white;
-  height: 50vh;
+  height: 40vh;
   width: 100vw;
   display: flex;
   flex-direction: column;
@@ -40,7 +45,7 @@
 }
 @import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
 footer {
-  background-color: #9BD0FE;
+  background-color: #00ADEF;
     box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
     box-sizing: border-box;
     width: 100%;
@@ -50,6 +55,7 @@ footer {
     padding: 22px 40px 20px 20px;
     margin-top: 1px;
   display: block;
+  height: 228px;
 }
 #footstamp {
   margin-top: 5%;

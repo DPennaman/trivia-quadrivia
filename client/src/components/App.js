@@ -7,15 +7,15 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-      <img src="TQlogo.png" alt="Logo"
+      <img src="TQlogo.png" alt="Logo" id="logo"
             height={100}
-            width={400}/>
+            width={200}/>
         <header className="App-header" />
           <div className="MainContent">
           <p>
           </p>
           </div>
-      // <Footer className="Footer"/>
+      <Footer className="Footer"/>
       </div>
     );
   }
