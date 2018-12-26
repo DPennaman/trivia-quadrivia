@@ -1,0 +1,131 @@
+.App {
+  text-align: center;
+}
+.App-logo {
+  animation: App-logo-spin infinite 5s linear;
+  height: 20vmin;
+}
+.App-header {
+  background-color: #00D8F9;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+.App-link {
+  color: #61dafb;
+}
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(180deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.MainContent {
+  background-color: white;
+  height: 50vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: black;
+}
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+footer {
+  background-color: #9BD0FE;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+    box-sizing: border-box;
+    width: 100%;
+    text-align: left;
+    font-family: 'Josefin Sans', cursive;
+  color: white;
+    padding: 22px 40px 20px 20px;
+    margin-top: 1px;
+  display: block;
+}
+#footstamp {
+  margin-top: 5%;
+  padding: 20px 20px;
+}
+#footpolicies {
+  display: flex;
+  list-style-type: none;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-left: 1%;
+  width: 25%;
+}
+#US {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  margin-right: 24%;
+  justify-content: space-between;
+  width: 30%;
+  margin-top: 5%;
+  padding: 15px;
+  padding-left: 1%;
+}
+#followus {
+}
+#TQ {
+  display: flex;
+  width: 300px;
+  height: 15%;
+  justify-content: center;
+  margin-top: -8.5%;
+  margin-left: 60%;
+  padding: 10px;
+}
+#footlogos {
+  display: flex;
+  list-style-type: none;
+  flex-direction: row;
+  justify-content: center;
+  justify-content: space-between;
+  margin-top: -6%;
+  margin-left:62.0%;
+  padding-left: 1%;
+  padding-right: 1%;
+  width: 225px;
+}
+#twitterlogo {
+  padding: 10px;
+  font-size: 37px;
+  width: 37px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+#fblogo {
+  padding: 10px;
+  font-size: 37px;
+  width: 37px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+#instalogo {
+  padding: 10px;
+  font-size: 37px;
+  width: 37px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+#youlogo {
+  padding: 10px;
+  font-size: 37px;
+  width: 37px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
