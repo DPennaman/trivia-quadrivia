@@ -7,7 +7,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-      <img src="TQlogo.png" alt="Logo" id="logo"
+      <img src="TQlogo.png" alt="Logo" id="trivialogo"
             height={100}
             width={200}/>
         <header className="App-header" />
