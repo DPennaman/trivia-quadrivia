@@ -15,9 +15,9 @@ class App extends Component {
           <div className="MainContent">
           <p>
           </p>
+          <Button className="Button" />
           </div>
       <Footer className="Footer"/>
-          <Button />
 
       </div>
     );
