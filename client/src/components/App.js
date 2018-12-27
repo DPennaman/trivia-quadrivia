@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 import '../style/app.css';
 import Header from './Header';
 import Footer from './Footer';
-// import Buttons from './components/Buttons';
+import Button from './Button';
+
 class App extends Component {
   render() {
     return (
@@ -15,7 +16,7 @@ class App extends Component {
           <p>
           </p>
           </div>
-      // <Footer className="Footer"/>
+          <Button />
       </div>
     );
   }
