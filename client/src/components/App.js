@@ -3,6 +3,7 @@ import '../style/app.css';
 import Header from './Header';
 import Footer from './Footer';
 import Button from './Button';
+import About from './About';
 
 class App extends Component {
   render() {
