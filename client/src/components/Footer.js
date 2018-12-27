@@ -8,9 +8,9 @@ const Footer = () => {
 
     <div>
 
-    </div>
 
-          <p id="footer">Placeholder</p>
+    </div>
+          <p id="footer"></p>
 
             <ul id="US">
               <li>Home</li>
