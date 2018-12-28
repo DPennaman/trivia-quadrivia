@@ -4,7 +4,9 @@ import React from 'react';
 const Question = props => {
 	return (
 		<div>
-      {props.question.question}
+      <p>{props.question.question}</p>
+			{ props.answer ? <p>{props.question.correct_answer}</p> : null}
+			<button onClick={props.handleClick}>Answer</button>
 		</div>
 	)
 }

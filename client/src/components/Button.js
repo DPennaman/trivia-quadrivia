@@ -1,12 +1,12 @@
 import React from 'react';
-// import QuestionList from './QuestionList';
 import Question from './Question';
 import axios from 'axios';
 
 class Button extends React.Component {
 
 	state = {
-		questions: []
+		questions: [],
+		answer: false
 	}
 
 	// async componentDidMount() {
@@ -24,12 +24,16 @@ class Button extends React.Component {
 	// }
 
    fetchQuestion = async () => {
-    let {data} = await axios.get('https://opentdb.com/api.php?amount=3');
+    let {data} = await axios.get('https://opentdb.com/api.php?amount=1');
 		this.setState({
 			questions: data.results
 		})
     console.log(this.state.questions)
   }
+
+	handleClick = (e) => {
+		this.setState({answer: true})
+	}
 
 	render() {
 		return (
@@ -37,7 +41,7 @@ class Button extends React.Component {
         <button id="button" onClick={this.fetchQuestion}>Get New Question</button>
         <div>
           {this.state.questions.map((question, index) => {
-            return <Question question={question} key={index} />
+            return <Question handleClick={this.handleClick} answer={this.state.answer} question={question} key={index} />
           })}
         </div>
       </div>
