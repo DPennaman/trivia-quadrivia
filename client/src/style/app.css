@@ -5,8 +5,16 @@
 
 a:link {
   text-decoration: none;
-  color: black;
-  font-size: 17px;
+  color: white;
+}
+a:hover {
+  text-decoration: underline;
+  color:white;
+  }
+
+a:visited {
+  text-decoration: none;
+  color:white;
 }
 .App {
   background-color: #f9fcff;
@@ -19,7 +27,7 @@ a:link {
 #trivialogo {
   animation: slidein 2s;
 }
-.App-header {
+.Qbox {
   height: 0vh;
   width: 0vw;
   display: flex;
@@ -27,10 +35,11 @@ a:link {
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: black;
   border-radius: 24px;
   border: 0px black solid;
-  box-shadow: 0px 0px 8px orange;
+  /* box-shadow: 0px 0px 8px red; */
+  box-shadow: inset 1px 1px 100px 10px lightblue;
   animation-name: fadein2;
   animation-duration: 4s;
   animation-delay: 1s;
@@ -43,10 +52,15 @@ a:link {
   to {opacity:1;}
 }
 @keyframes fadein2 {
-  0% {opacity: 0; width: 0px; height: 0px; background-color: red;}
-  50% {opacity: .5; width: 50vw; height: 0px; background-color: purple;border: 1px orange solid}
-  100% {opacity: 1; width: 50vw; height: 27vh;   background-color: rgba(0, 173, 239, 0.65); border: 0px orange solid;}
+  0% {opacity: 0; width: 0px; height: 0px; background-color: black;}
+  50% {opacity: .5; width: 50vw; height: 0px; background-color: red;border: 1px red solid}
+  100% {opacity: 1; width: 50vw; height: 23vh;   background-color: rgba(0, 173, 239, 0.4); border: 0px black solid;   z-index: 0;}
     }
+
+@keyframes fadein3 {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
 
 @keyframes slidein {
   from {
@@ -84,8 +98,8 @@ a:link {
 }
 @import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
 footer {
-  /* background-color: #00ADEF; */
-    box-shadow: 0px -2px 8px -1px orange;
+  background-color: #00ADEF;
+    box-shadow: 0px -2px 8px -1px red;
     box-sizing: border-box;
     text-align: left;
     font-family: 'Josefin Sans', cursive;
@@ -211,7 +225,6 @@ footer {
 }
 
  Button {
-  animation:fadein 6s, pulse 6s;
 	-moz-box-shadow:inset 0px 1px 0px 0px #f29c93;
 	-webkit-box-shadow:inset 0px 1px 0px 0px #f29c93;
 	box-shadow:inset 0px 1px 0px 0px #f29c93;
@@ -236,7 +249,9 @@ footer {
 	padding:6px 24px;
 	text-decoration:none;
 	text-shadow:0px 1px 0px #b23e35;
-  margin-top: 240px;
+  margin-top: 14px;
+  z-index: 1;
+  position: relative;
 }
 Button:hover {
 	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ce0100), color-stop(1, #fe1a00));
@@ -247,8 +262,13 @@ Button:hover {
 	background:linear-gradient(to bottom, #ce0100 5%, #fe1a00 100%);
 	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ce0100', endColorstr='#fe1a00',GradientType=0);
 	background-color:#ce0100;
+  z-index: 1;
+  position: relative;
 }
 Button:active {
 	position:relative;
 	top:1px;
+  z-index: 1;
 }
+.grow { transition: all .2s ease-in-out; }
+.grow:hover { transform: scale(1.5); }
