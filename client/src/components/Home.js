@@ -13,8 +13,8 @@ const Home = () => {
             width={200}/>
     <header className="App-header" />
     <div className="Qbox">
-      <Button className="Button" />
 
+      <Button className="Button" />
     </div>
     <div className="MainContent">
     <p>

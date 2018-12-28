@@ -1,7 +1,21 @@
 * {
   margin: 0;
+  padding: 1;
 }
 
+a:link {
+  text-decoration: none;
+  color: white;
+}
+a:hover {
+  text-decoration: underline;
+  color:white;
+  }
+
+a:visited {
+  text-decoration: none;
+  color:white;
+}
 .App {
   background-color: #f9fcff;
   text-align: center;
@@ -24,7 +38,8 @@
   color: black;
   border-radius: 24px;
   border: 0px black solid;
-  box-shadow: 0px 0px 8px orange;
+  /* box-shadow: 0px 0px 8px red; */
+  box-shadow: inset 1px 1px 100px 10px lightblue;
   animation-name: fadein2;
   animation-duration: 4s;
   animation-delay: 1s;
@@ -37,10 +52,15 @@
   to {opacity:1;}
 }
 @keyframes fadein2 {
-  0% {opacity: 0; width: 0px; height: 0px; background-color: red;}
-  50% {opacity: .5; width: 50vw; height: 0px; background-color: purple;border: 1px orange solid}
-  100% {opacity: 1; width: 50vw; height: 20vh;   background-color: rgba(0, 173, 239, 0.4); border: 0px orange solid;   z-index: 0;}
+  0% {opacity: 0; width: 0px; height: 0px; background-color: black;}
+  50% {opacity: .5; width: 50vw; height: 0px; background-color: red;border: 1px red solid}
+  100% {opacity: 1; width: 50vw; height: 23vh;   background-color: rgba(0, 173, 239, 0.4); border: 0px black solid;   z-index: 0;}
     }
+
+@keyframes fadein3 {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
 
 @keyframes slidein {
   from {
@@ -79,7 +99,7 @@
 @import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
 footer {
   background-color: #00ADEF;
-    box-shadow: 0px -2px 8px -1px orange;
+    box-shadow: 0px -2px 8px -1px red;
     box-sizing: border-box;
     width: 100%;
     text-align: left;
@@ -177,7 +197,6 @@ footer {
 }
 
  Button {
-  animation:fadein 6s, pulse 6s;
 	-moz-box-shadow:inset 0px 1px 0px 0px #f29c93;
 	-webkit-box-shadow:inset 0px 1px 0px 0px #f29c93;
 	box-shadow:inset 0px 1px 0px 0px #f29c93;
@@ -202,7 +221,7 @@ footer {
 	padding:6px 24px;
 	text-decoration:none;
 	text-shadow:0px 1px 0px #b23e35;
-  margin-top: 30px;
+  margin-top: 14px;
   z-index: 1;
   position: relative;
 }
@@ -223,3 +242,5 @@ Button:active {
 	top:1px;
   z-index: 1;
 }
+.grow { transition: all .2s ease-in-out; }
+.grow:hover { transform: scale(1.5); }
