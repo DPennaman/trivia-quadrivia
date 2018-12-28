@@ -9,30 +9,22 @@ class Button extends React.Component {
 		answer: false
 	}
 
-	// async componentDidMount() {
-	// 	this.fetchQuestion();
-	// }
-
-	// async fetchQuestion(){
-	// 	// let randomId = Math.random() * 10;
-	// 	// randomId = Math.ceil(randomId)
-	// 	let {data} = await axios.get('https://opentdb.com/api.php?amount=1');
-	// 	this.setState({
-	// 		questions: data.results
-	// 	})
-  //   console.log(data.results)
-	// }
-
    fetchQuestion = async () => {
     let {data} = await axios.get('https://opentdb.com/api.php?amount=1');
 		this.setState({
-			questions: data.results
+			questions: data.results,
+			answer: false
 		})
     console.log(this.state.questions)
   }
 
 	handleClick = (e) => {
-		this.setState({answer: true})
+		if(this.state.answer === false){
+			this.setState({answer: true})
+		} else {
+			this.setState({answer: false})
+		}
+
 	}
 
 	render() {
