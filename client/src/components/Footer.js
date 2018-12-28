@@ -1,4 +1,7 @@
-import React from 'react';
+import React, { Component } from 'react';
+import About from './About';
+import { Link, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Route} from 'react-router-dom';
 
 
 
@@ -6,20 +9,16 @@ const Footer = () => {
    return (
       <footer>
 
-    <div>
 
-
-    </div>
           <p id="footer"></p>
 
             <ul id="US">
-              <li>Home</li>
-              <li>About Us</li>
-              <li>Contact</li>
-
+              <Link to='/'>Home</Link>
+              <Link to='/about'>About</Link>
+              <Link to='/contact'>Contact</Link>
             </ul>
 
-   <div id="followus">
+    <div id="followus">
        <ul id="footlogos">
          <li><img id="twitterlogo" src={"https://upload.wikimedia.org/wikipedia/fr/c/c8/Twitter_Bird.svg"}/></li>
          <li><img id="fblogo" src={"https://upload.wikimedia.org/wikipedia/commons/c/c2/F_icon.svg"}/></li>

@@ -4,23 +4,23 @@ import Header from './Header';
 import Footer from './Footer';
 import Button from './Button';
 import About from './About';
+import Home from './Home'
+
+import { BrowserRouter as Router, Route} from 'react-router-dom';
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-      <img src="TQlogo.png" alt="Logo" id="trivialogo"
-            height={100}
-            width={200}/>
-        <header className="App-header" />
-          <div className="MainContent">
-          <p>
-          </p>
-          <Button className="Button" />
-          </div>
-      <Footer className="Footer"/>
 
+    <Router>
+      <div>
+        <Route exact path="/" component={Home}></Route>
+        <Route path="/about" component={About}></Route>
       </div>
+    </Router>
+
+
+
     );
   }
 }
