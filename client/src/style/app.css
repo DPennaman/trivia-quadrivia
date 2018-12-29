@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
 }
-
 a:link {
   text-decoration: none;
   color: white;
@@ -17,7 +16,6 @@ a:visited {
   color:white;
 }
 .App {
-  background-color: #f9fcff;
   text-align: center;
   display: flex;
   align-items: center;
@@ -46,6 +44,7 @@ a:visited {
   animation-fill-mode: forwards;
   position: fixed;
   margin-top: -80px;
+
 }
 @keyframes fadein {
   from{opacity: 0;}
@@ -126,7 +125,7 @@ footer {
   padding-left: 0px;
   padding-right: 0px;
   font-size: 14px;
-  color: gray;
+  color: black;
 }
 #footpolicies {
   display: flex;
@@ -139,19 +138,7 @@ footer {
   height: 45%;
   border: 0.5px solid black;
 }
-#US {
-  display: flex;
-  flex-direction:  row;
-  list-style-type: none;
-  margin-right: 24%;
-  justify-content: space-between;
-  width: 30%;
-  margin-bottom: 1%;
-  /* padding: 20px; */
-  /* padding-left: 1%; */
-  margin-left: 69.5%;
 
-}
 
 
 
@@ -271,4 +258,52 @@ Button:active {
   z-index: 1;
 }
 .grow { transition: all .2s ease-in-out; }
-.grow:hover { transform: scale(1.5); }
+.grow:hover { transform: scale(1.2); }
+
+#US {
+  display: flex;
+  flex-direction:  row;
+  list-style-type: none;
+  margin-right: 14%;
+  justify-content: space-between;
+  width: 30%;
+  margin-bottom: 1%;
+  margin-left: 86.5%;
+  margin-top: .3%;
+ -moz-box-shadow:inset 0px 1px 0px 0px #f29c93;
+ -webkit-box-shadow:inset 0px 1px 0px 0px #f29c93;
+ box-shadow:inset 0px 1px 0px 0px #f29c93;
+ background-color:#fe1a00;
+ -moz-border-radius:6px;
+ -webkit-border-radius:6px;
+ border-radius:6px;
+ display:inline-block;
+ cursor:pointer;
+ color:#ffffff;
+ font-family:Arial;
+ font-size:15px;
+ font-weight:bold;
+ padding:6px 24px 6px 24px;
+ text-decoration:none;
+ text-shadow:0px 1px 0px #b23e35;
+ margin-top: 14px;
+ z-index: 1;
+ position: relative;
+}
+#US:hover {
+ background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ce0100), color-stop(1, #fe1a00));
+ background:-moz-linear-gradient(top, #ce0100 5%, #fe1a00 100%);
+ background:-webkit-linear-gradient(top, #ce0100 5%, #fe1a00 100%);
+ background:-o-linear-gradient(top, #ce0100 5%, #fe1a00 100%);
+ background:-ms-linear-gradient(top, #ce0100 5%, #fe1a00 100%);
+ background:linear-gradient(to bottom, #ce0100 5%, #fe1a00 100%);
+ filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ce0100', endColorstr='#fe1a00',GradientType=0);
+ background-color:#ce0100;
+ z-index: 1;
+ position: relative;
+}
+#US:active {
+ position:relative;
+ top:1px;
+ z-index: 1;
+}
