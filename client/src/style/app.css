@@ -1,9 +1,21 @@
 * {
   margin: 0;
+  padding: 0;
 }
+a:link {
+  text-decoration: none;
+  color: white;
+}
+a:hover {
+  text-decoration: underline;
+  color:white;
+  }
 
+a:visited {
+  text-decoration: none;
+  color:white;
+}
 .App {
-  background-color: #f9fcff;
   text-align: center;
   display: flex;
   align-items: center;
@@ -13,7 +25,7 @@
 #trivialogo {
   animation: slidein 2s;
 }
-.App-header {
+.Qbox {
   height: 0vh;
   width: 0vw;
   display: flex;
@@ -21,26 +33,33 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: black;
   border-radius: 24px;
   border: 0px black solid;
-  box-shadow: 0px 0px 8px orange;
+  /* box-shadow: 0px 0px 8px red; */
+  box-shadow: inset 1px 1px 100px 10px lightblue;
   animation-name: fadein2;
   animation-duration: 4s;
   animation-delay: 1s;
   animation-fill-mode: forwards;
   position: fixed;
   margin-top: -80px;
+
 }
 @keyframes fadein {
   from{opacity: 0;}
   to {opacity:1;}
 }
 @keyframes fadein2 {
-  0% {opacity: 0; width: 0px; height: 0px; background-color: red;}
-  50% {opacity: .5; width: 50vw; height: 0px; background-color: purple;border: 1px orange solid}
-  100% {opacity: 1; width: 50vw; height: 27vh;   background-color: rgba(0, 173, 239, 0.65); border: 0px orange solid;}
+  0% {opacity: 0; width: 0px; height: 0px; background-color: black;}
+  50% {opacity: .5; width: 50vw; height: 0px; background-color: red;border: 1px red solid}
+  100% {opacity: 1; width: 50vw; height: 23vh;   background-color: rgba(0, 173, 239, 0.4); border: 0px black solid;   z-index: 0;}
     }
+
+@keyframes fadein3 {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
 
 @keyframes slidein {
   from {
@@ -79,22 +98,34 @@
 @import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
 footer {
   background-color: #00ADEF;
-    box-shadow: 0px -2px 8px -1px orange;
+    box-shadow: 0px -2px 8px -1px red;
     box-sizing: border-box;
-    width: 100%;
     text-align: left;
     font-family: 'Josefin Sans', cursive;
-  color: white;
+    justify-content: space-around;
+    flex-direction: column;
+    color: black;
     padding: 0px 0px 0px 0px;
     margin-top: 1px;
-  display: block;
-  height: 30vh;
-  animation: fadein 2s;
-  position: relative;
+    display: flex;
+    width: 100%;
+    height: 15vh;
+    animation: fadein 2s;
+    position: absolute;
+    bottom: 0px;
+    display: flex;
+    flex-shrink: 1;
 }
 #footstamp {
-  margin-top: 5%;
-  padding: 20px 20px;
+  /* margin-top: 5%; */
+  /* padding: 20px 20px; */
+
+  display: flex;
+  margin-bottom: 0%;
+  padding-left: 0px;
+  padding-right: 0px;
+  font-size: 14px;
+  color: black;
 }
 #footpolicies {
   display: flex;
@@ -102,46 +133,50 @@ footer {
   flex-direction: row;
   justify-content: space-between;
   padding-left: 1%;
+  margin-bottom: 2%;
   width: 25%;
+  height: 45%;
+  border: 0.5px solid black;
 }
-#US {
-  display: flex;
-  flex-direction: row;
-  list-style-type: none;
-  margin-right: 24%;
-  justify-content: space-between;
-  width: 30%;
-  margin-top: 6%;
-  padding: 20px;
-  padding-left: 1%;
-}
+
+
+
+
 #followus {
-}
-#TQ {
   display: flex;
-  width: 300px;
-  height: 15%;
-  justify-content: center;
-  margin-top: -8.5%;
-  margin-left: 60%;
-  padding-left: 40px;
+
 }
+
+#TQ {
+  Display: flex;
+
+  margin-left: 45%;
+  margin-bottom: 6%;
+  justify-content: ;
+  font-size: 17px;
+
+
+}
+
 #footlogos {
   display: flex;
   list-style-type: none;
   flex-direction: row;
   justify-content: center;
   justify-content: space-between;
-  margin-top: -6%;
-  margin-left:64.0%;
-  padding-left: 1%;
-  padding-right: 1%;
-  width: 225px;
+  margin-bottom: 4%;
+  margin-top: 0.5%;
+  margin-left: -15%;
+  /* padding-left: 1%; */
+  /* padding-right: 1%; */
+  height: 2vh;
+  width: 18vw;
+
 }
 #twitterlogo {
   padding: 10px;
-  font-size: 37px;
-  width: 37px;
+  font-size: 38px;
+  width: 38px;
   text-align: center;
   text-decoration: none;
   margin: 5px 2px;
@@ -149,8 +184,8 @@ footer {
 }
 #fblogo {
   padding: 10px;
-  font-size: 37px;
-  width: 37px;
+  font-size: 38px;
+  width: 38px;
   text-align: center;
   text-decoration: none;
   margin: 5px 2px;
@@ -158,8 +193,8 @@ footer {
 }
 #instalogo {
   padding: 10px;
-  font-size: 37px;
-  width: 37px;
+  font-size: 38px;
+  width: 38px;
   text-align: center;
   text-decoration: none;
   margin: 5px 2px;
@@ -167,8 +202,8 @@ footer {
 }
 #youlogo {
   padding: 10px;
-  font-size: 37px;
-  width: 37px;
+  font-size: 38px;
+  width: 38px;
   text-align: center;
   text-decoration: none;
   margin: 5px 2px;
@@ -177,7 +212,6 @@ footer {
 }
 
  Button {
-  animation:fadein 6s, pulse 6s;
 	-moz-box-shadow:inset 0px 1px 0px 0px #f29c93;
 	-webkit-box-shadow:inset 0px 1px 0px 0px #f29c93;
 	box-shadow:inset 0px 1px 0px 0px #f29c93;
@@ -202,7 +236,9 @@ footer {
 	padding:6px 24px;
 	text-decoration:none;
 	text-shadow:0px 1px 0px #b23e35;
-  margin-top: 240px;
+  margin-top: 14px;
+  z-index: 1;
+  position: relative;
 }
 Button:hover {
 	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ce0100), color-stop(1, #fe1a00));
@@ -213,8 +249,61 @@ Button:hover {
 	background:linear-gradient(to bottom, #ce0100 5%, #fe1a00 100%);
 	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ce0100', endColorstr='#fe1a00',GradientType=0);
 	background-color:#ce0100;
+  z-index: 1;
+  position: relative;
 }
 Button:active {
 	position:relative;
 	top:1px;
+  z-index: 1;
+}
+.grow { transition: all .2s ease-in-out; }
+.grow:hover { transform: scale(1.2); }
+
+#US {
+  display: flex;
+  flex-direction:  row;
+  list-style-type: none;
+  margin-right: 14%;
+  justify-content: space-between;
+  width: 30%;
+  margin-bottom: 1%;
+  margin-left: 86.5%;
+  margin-top: .3%;
+ -moz-box-shadow:inset 0px 1px 0px 0px #f29c93;
+ -webkit-box-shadow:inset 0px 1px 0px 0px #f29c93;
+ box-shadow:inset 0px 1px 0px 0px #f29c93;
+ background-color:#fe1a00;
+ -moz-border-radius:6px;
+ -webkit-border-radius:6px;
+ border-radius:6px;
+ display:inline-block;
+ cursor:pointer;
+ color:#ffffff;
+ font-family:Arial;
+ font-size:15px;
+ font-weight:bold;
+ padding:6px 24px 6px 24px;
+ text-decoration:none;
+ text-shadow:0px 1px 0px #b23e35;
+ margin-top: 14px;
+ z-index: 1;
+ position: relative;
+}
+#US:hover {
+ background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ce0100), color-stop(1, #fe1a00));
+ background:-moz-linear-gradient(top, #ce0100 5%, #fe1a00 100%);
+ background:-webkit-linear-gradient(top, #ce0100 5%, #fe1a00 100%);
+ background:-o-linear-gradient(top, #ce0100 5%, #fe1a00 100%);
+ background:-ms-linear-gradient(top, #ce0100 5%, #fe1a00 100%);
+ background:linear-gradient(to bottom, #ce0100 5%, #fe1a00 100%);
+ filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ce0100', endColorstr='#fe1a00',GradientType=0);
+ background-color:#ce0100;
+ z-index: 1;
+ position: relative;
+}
+#US:active {
+ position:relative;
+ top:1px;
+ z-index: 1;
 }
