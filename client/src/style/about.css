@@ -1,4 +1,47 @@
 .about{
-  position: fixed;
-  
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+}
+#lcaballero {
+  display: flex;
+  flex-direction: column;
+  border-radius: 25px;
+  padding: 20px;
+  width: 250px;
+  height: 200px;
+}
+
+#agonzalez {
+  display: flex;
+  flex-direction: column;
+  border-radius: 25px;
+  padding: 20px;
+  width: 250px;
+  height: 200px;
+}
+
+#dpennaman {
+  display: flex;
+  flex-direction: column;
+  border-radius: 25px;
+  padding: 20px;
+  width: 250px;
+  height: 200px;
+}
+
+#qosuchukwu {
+  display: flex;
+  flex-direction: column;
+  border-radius: 25px;
+  padding: 20px;
+  width: 250px;
+  height: 200px;
+}
+
+h2{
+  font-family: sans-serif;
+  color: #00ADEF;
+  text-align: center;
 }

@@ -8,8 +8,6 @@ import About from './About';
 const Home = () => {
   return(
     <div className="App">
-      <Header/>
-    <header className="App-header" />
     <div className="MainContent">
     <p>
     </p>
