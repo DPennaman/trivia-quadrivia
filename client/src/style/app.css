@@ -37,13 +37,13 @@ a:visited {
   border-radius: 24px;
   border: 0px black solid;
   /* box-shadow: 0px 0px 8px red; */
-  box-shadow: inset 1px 1px 100px 10px lightblue;
+  box-shadow: 0px -0px 10px 1px red;
   animation-name: fadein2;
   animation-duration: 4s;
   animation-delay: 1s;
   animation-fill-mode: forwards;
-  position: fixed;
-  margin-top: -80px;
+  position: relative;
+  margin-top: 2px;
 
 }
 @keyframes fadein {
@@ -52,8 +52,8 @@ a:visited {
 }
 @keyframes fadein2 {
   0% {opacity: 0; width: 0px; height: 0px; background-color: black;}
-  50% {opacity: .5; width: 50vw; height: 0px; background-color: red;border: 1px red solid}
-  100% {opacity: 1; width: 50vw; height: 23vh;   background-color: rgba(0, 173, 239, 0.4); border: 0px black solid;   z-index: 0;}
+  50% {opacity: .5; width: 50vw; height: 0px; background-color: pink;border: 1px red solid}
+  100% {opacity: 1; width: 50vw; height: 23vh;   background-color: #96e2ff; border: 0px black solid;   z-index: 0;}
     }
 
 @keyframes fadein3 {
@@ -97,7 +97,7 @@ a:visited {
 }
 @import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
 footer {
-  background-color: #00ADEF;
+  background-color: #96e2ff;
     box-shadow: 0px -2px 8px -1px red;
     box-sizing: border-box;
     text-align: left;
