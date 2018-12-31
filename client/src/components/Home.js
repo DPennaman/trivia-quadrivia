@@ -8,15 +8,17 @@ import About from './About';
 const Home = () => {
   return(
     <div className="App">
+      <Header className="App-header" />
+
+    <div className="Qbox">
+      <Button className="Button" />
+    </div>
     <div className="MainContent">
     <p>
     </p>
-    <Button className="Button" />
     </div>
     <Footer className="Footer"/>
     </div>
-
   )
 }
-
 export default Home
