@@ -7,7 +7,7 @@ a:link {
   color: white;
 }
 a:hover {
-  text-decoration: underline;
+  text-decoration: none;
   color:white;
   }
 
@@ -95,9 +95,11 @@ a:visited {
   font-size: calc(10px + 2vmin);
   color: black;
 }
-@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+url('https://fonts.googleapis.com/css?family=Josefin+Sans');
 footer {
+
   background-color: #96e2ff;
+
     box-shadow: 0px -2px 8px -1px red;
     box-sizing: border-box;
     text-align: left;
@@ -115,6 +117,7 @@ footer {
     bottom: 0px;
     display: flex;
     flex-shrink: 1;
+
 }
 #footstamp {
   /* margin-top: 5%; */
@@ -144,19 +147,28 @@ footer {
 
 #followus {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-content: space-between;
+
+
 
 }
 
 #TQ {
   Display: flex;
-
-  margin-left: 45%;
-  margin-bottom: 6%;
-  justify-content: ;
+  height: 5vh;
+  width: 12vw;
+  margin-left: 43%;
+  justify-content: center;
   font-size: 17px;
-
+  margin-top: -0.5%;
+  padding-bottom: 1%;
 
 }
+
+
+
 
 #footlogos {
   display: flex;
@@ -164,13 +176,14 @@ footer {
   flex-direction: row;
   justify-content: center;
   justify-content: space-between;
-  margin-bottom: 4%;
-  margin-top: 0.5%;
-  margin-left: -15%;
+  margin-top: -1.5%;
+  margin-left: 40%;
+  margin-right: 40%;
   /* padding-left: 1%; */
   /* padding-right: 1%; */
-  height: 2vh;
+  height: 13vh;
   width: 18vw;
+
 
 }
 #twitterlogo {
@@ -269,15 +282,16 @@ Button:active {
 }
 #US {
   display: flex;
-  flex-direction:  row;
+  flex-direction:  row ;
   list-style-type: none;
-  margin-right: 10%;
-  float: right;
+
+  margin-right: 5%;
   justify-content: space-between;
-  flex-grow: 5;
-  width: 15vw;
+  width: 13vw;
+  float:right;
+  flex-grow: 10;
   margin-bottom: 1%;
-  /* margin-left: 86.5%; */
+
   margin-top: .3%;
  -moz-box-shadow:inset 0px 1px 0px 0px #f29c93;
  -webkit-box-shadow:inset 0px 1px 0px 0px #f29c93;
@@ -298,6 +312,7 @@ Button:active {
  margin-top: 14px;
  z-index: 1;
  position: relative;
+
 }
 #US:hover {
  background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ce0100), color-stop(1, #fe1a00));
