@@ -11,17 +11,17 @@ const Footer = () => {
 
 
   <div>
-     <div id="box1"></div>
-            <ul id="US">
-              <Link to='/'>  Home &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   </Link>
-              <Link to='/about'>  About &nbsp;&nbsp;&nbsp;&nbsp;  </Link>
-              <Link to='/contact'>  Contact  </Link>
-            </ul>
- </div>
+    <div id="box1"></div>
+    <ul id="US">
+      <li><Link to='/'>  Home &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   </Link></li>
+      <li><Link to='/about'>  About &nbsp;&nbsp;&nbsp;&nbsp;  </Link></li>
+      <li><Link to='/contact'>  Contact  </Link></li>
+    </ul>
+  </div>
 
 
   <span id="TQ">Follow TriviaQuadrivia!</span>
-  
+
        <ul id="footlogos">
          <li class="grow"><img id="twitterlogo" src={"https://cdn3.iconfinder.com/data/icons/capsocial-round/500/twitter-512.png"}/></li>
          <li class="grow"><img id="fblogo" src={"https://upload.wikimedia.org/wikipedia/en/thumb/8/8c/Facebook_Home_logo_old.svg/1024px-Facebook_home_logo_old.svg.png"}/></li>
