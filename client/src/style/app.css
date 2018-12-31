@@ -34,7 +34,7 @@ a:visited {
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: black;
+  color: white;
   border-radius: 24px;
   border: 0px black solid;
   /* box-shadow: 0px 0px 8px red; */
@@ -44,7 +44,7 @@ a:visited {
   animation-delay: 1s;
   animation-fill-mode: forwards;
   position: relative;
-  margin-top: 2px;
+  margin-top: 160px;
 
 }
 @keyframes fadein {
@@ -129,7 +129,7 @@ footer {
   padding-left: 0px;
   padding-right: 0px;
   font-size: 14px;
-  color: black;
+  color: grey;
 }
 #footpolicies {
   display: flex;
@@ -163,6 +163,7 @@ footer {
   font-size: 17px;
   margin-top: -0.5%;
   padding-bottom: 1%;
+  color: grey;
 
 }
 
