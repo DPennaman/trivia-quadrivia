@@ -17,7 +17,6 @@ const Home = () => {
     <p>
     </p>
     </div>
-    <Footer className="Footer"/>
     </div>
   )
 }
