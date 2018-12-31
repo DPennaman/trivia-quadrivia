@@ -8,12 +8,9 @@ import About from './About';
 const Home = () => {
   return(
     <div className="App">
-    <header className="App-header" />
-    <img src="TQlogo.png" alt="Logo" id="trivialogo"
-      height={100}
-      width={200}/>
-    <div className="Qbox">
+      <Header className="App-header" />
 
+    <div className="Qbox">
       <Button className="Button" />
     </div>
     <div className="MainContent">
@@ -22,8 +19,6 @@ const Home = () => {
     </div>
     <Footer className="Footer"/>
     </div>
-
   )
 }
-
 export default Home
