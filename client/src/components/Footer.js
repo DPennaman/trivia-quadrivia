@@ -10,6 +10,8 @@ const Footer = () => {
       <footer>
 
   <div>
+    <div id="emptydiv"><p> </p>
+    </div>
 
 
             <ul id="US">
